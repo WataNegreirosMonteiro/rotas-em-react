@@ -1,0 +1,166 @@
+:root{
+  --bs-blue: #0d6efd;
+  --bs-primary: #0d6efd;
+  --bs-bgBlue: #ecf2f8;
+  --bs-green: #198754;
+  --bs-success: #198754;
+  --bs-gray-200: #e9ecef;
+  --bs-secondary: #6c757d;
+  --bs-black: #000;
+  --bs-white: #fff;
+}
+
+.signin-container{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: #e9ecef;
+}
+
+.signin-card{
+  width: 40vw;
+  height: 60vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+  background: white;
+}
+
+.signin-header{
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  
+  margin: 1rem;
+  color: #6c757d;
+}
+
+.signin-inputs{
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 0.5rem;
+}
+
+.signin-input-email{
+  width: 90%;
+  height: 35%;
+  
+  display: flex;
+  align-items: center;
+
+  border-radius: 8px;
+  border: 2px solid#e9ecef;
+  cursor: pointer;
+}
+.signin-input-email:hover{
+  background: #ecf2f8;
+}
+
+.signin-input-password{
+  width: 90%;
+  height: 35%;
+  
+  display: flex;
+  align-items: center;
+
+  border-radius: 8px;
+  border: 2px solid#e9ecef;
+  cursor: pointer;
+}
+.signin-input-password:hover{
+  background: #ecf2f8;
+}
+
+input{
+  width: 100%;
+  padding: 0.5rem;
+
+  outline: 0;
+  background: transparent;
+}
+
+#button-signin-link{
+  width: 90%;
+
+  display: flex;
+  justify-content: center;
+}
+button{
+  width: 100%;
+}
+
+p{
+  color: #5698fb;
+}
+/* mobile */
+@media (max-width: 800px){
+  .signin-card{
+    width: 310px;
+    height: 410px;
+
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    background: white;
+  }
+
+  .signin-inputs{
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    gap: 0.5rem;
+  }
+
+  .signin-input-email{
+    width: 90%;
+    height: 45%;
+    
+    display: flex;
+    align-items: center;
+    
+    border-radius: 8px;
+    border: 2px solid#e9ecef;
+    cursor: pointer;
+  }
+
+  .signin-input-password{
+    width: 90%;
+    height: 45%;
+    
+    display: flex;
+    align-items: center;
+  
+    border-radius: 8px;
+    border: 2px solid#e9ecef;
+    cursor: pointer;
+  }
+
+  #button-signin-link{
+  width: 90%;
+
+  display: flex;
+  justify-content: center;
+  }
+  button{
+    width: 100%;
+
+    margin-top: 0.5rem;
+  }
+
+}
